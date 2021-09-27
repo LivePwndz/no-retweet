@@ -1,4 +1,4 @@
-package com.bdt.demobigdataprocessing;
+package com.bdt.demobigdataprocessing.config.twitter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.integration.endpoint.MessageProducerSupport;
@@ -58,6 +58,7 @@ public class TwitterMessageProducer extends MessageProducerSupport {
   public void doStop() {
     twitterStream.cleanUp();
     twitterStream.clearListeners();
+
   }
 
   public void setFollows(List<Long> follows) {

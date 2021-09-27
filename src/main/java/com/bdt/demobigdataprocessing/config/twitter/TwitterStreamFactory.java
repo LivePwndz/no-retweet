@@ -1,4 +1,4 @@
-package com.bdt.demobigdataprocessing;
+package com.bdt.demobigdataprocessing.config.twitter;
 
 import org.springframework.beans.factory.config.AbstractFactoryBean;
 import twitter4j.TwitterStream;

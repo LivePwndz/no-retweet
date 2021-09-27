@@ -1,4 +1,4 @@
-package com.bdt.demobigdataprocessing;
+package com.bdt.demobigdataprocessing.config.twitter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
@@ -51,7 +51,7 @@ public class TwitterConfig {
         .handle(m -> {
           String msg = m.getPayload().toString();
           kafkaClient.send("quickstart-events", msg);
-         // log.info(msg);
+          log.info(msg);
         })
         .get();
   }
