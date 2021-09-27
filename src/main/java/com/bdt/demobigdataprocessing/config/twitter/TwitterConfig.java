@@ -50,7 +50,7 @@ public class TwitterConfig {
         .transform(Status::getText)
         .handle(m -> {
           String msg = m.getPayload().toString();
-          kafkaClient.send("quickstart-events", msg);
+          kafkaClient.send("twitter-streaming-events", msg);
           log.info(msg);
         })
         .get();

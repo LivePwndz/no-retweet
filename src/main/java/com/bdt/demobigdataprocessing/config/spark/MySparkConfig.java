@@ -57,7 +57,7 @@ public class MySparkConfig {
         kafkaParams.put("group.id", "use_a_separate_group_id_for_each_stream");
         kafkaParams.put("auto.offset.reset", "latest");
         kafkaParams.put("enable.auto.commit", false);
-        Collection<String> topics = Collections.singletonList("quickstart-events");
+        Collection<String> topics = Collections.singletonList("twitter-streaming-events");
 
 
         sparkStream =
