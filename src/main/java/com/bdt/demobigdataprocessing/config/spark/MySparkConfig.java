@@ -40,7 +40,7 @@ public class MySparkConfig {
 
     private static JavaStreamingContext createStreamingContext() {
         SparkConf sparkConf = new SparkConf();
-        sparkConf.setAppName("WordCountingApp");
+        sparkConf.setAppName("No Retweets");
         sparkConf.setMaster("local[4]");
         sparkConf.set("spark.sql.catalogImplementation", "hive");
 

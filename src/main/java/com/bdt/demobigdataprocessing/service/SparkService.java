@@ -26,10 +26,7 @@ public class SparkService {
                 SparkHiveDAO.persistToHive(tweet);
                 System.out.println("In loop: "+tweet);
             });
-//            rdd.foreach(tweet -> {
-//                SparkHiveDAO.persistToHive(tweet);
-//                System.out.println("In loop: "+tweet);
-//            });
+//
         });
 
 

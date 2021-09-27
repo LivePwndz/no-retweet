@@ -33,3 +33,4 @@ build/
 .vscode/
 /spark-warehouse/
 /metastore_db/*
+*.log

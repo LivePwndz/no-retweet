@@ -23,8 +23,7 @@ public class SparkHiveDAO {
                 .enableHiveSupport()
                 .getOrCreate();
 
-        sparkSession.sql("DROP TABLE IF EXISTS no_retweet").show();
-        sparkSession.sql("DROP TABLE IF EXISTS word_freq").show();
+
         sparkSession.sql("CREATE TABLE IF NOT EXISTS no_retweet( tweet VARCHAR(280)) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' COLLECTION ITEMS TERMINATED BY '\n'");
         sparkSession.sql("SHOW TABLES").show();
 
